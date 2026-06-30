@@ -3,67 +3,130 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>THƯ VIỆN HỌC LIỆU SỐ</title>
+<title>THƯ VIỆN HỌC LIỆU SỐ - Nguyễn Văn Dũng</title>
 
 <style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial,Helvetica,sans-serif;
+}
+
 body{
-    font-family:Arial,Helvetica,sans-serif;
-    margin:0;
-    background:#f4f6f9;
+background:#f2f5f9;
 }
 
 header{
-    background:#0056b3;
-    color:white;
-    padding:20px;
-    text-align:center;
+background:#0056b3;
+color:white;
+padding:20px;
 }
 
-h1{
-    margin:0;
+.top{
+display:flex;
+align-items:center;
+max-width:1200px;
+margin:auto;
+}
+
+.logo{
+width:90px;
+margin-right:20px;
+}
+
+.title h1{
+font-size:36px;
+}
+
+.title p{
+margin-top:5px;
+font-size:18px;
+}
+
+.teacher{
+background:white;
+max-width:1200px;
+margin:25px auto;
+padding:20px;
+border-radius:10px;
+display:flex;
+align-items:center;
+box-shadow:0 2px 10px rgba(0,0,0,.15);
+}
+
+.teacher img{
+width:150px;
+height:180px;
+object-fit:cover;
+border-radius:8px;
+margin-right:30px;
+}
+
+.notice{
+background:#fff7d6;
+border-left:6px solid orange;
+padding:15px;
+max-width:1200px;
+margin:20px auto;
+border-radius:8px;
+}
+
+.notice h2{
+color:#cc0000;
+margin-bottom:10px;
 }
 
 .container{
-    width:95%;
-    margin:30px auto;
-    display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-    gap:20px;
+max-width:1300px;
+margin:auto;
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(230px,1fr));
+gap:20px;
+padding:20px;
 }
 
 .card{
-    background:white;
-    padding:20px;
-    border-radius:10px;
-    box-shadow:0 0 10px #ddd;
-    text-align:center;
+background:white;
+padding:25px;
+border-radius:10px;
+box-shadow:0 2px 10px rgba(0,0,0,.15);
+text-align:center;
+transition:.3s;
+}
+
+.card:hover{
+transform:translateY(-5px);
 }
 
 .card h3{
-    color:#0056b3;
+color:#0056b3;
+min-height:60px;
 }
 
-a{
-    display:inline-block;
-    margin-top:10px;
-    padding:10px 18px;
-    background:#007bff;
-    color:white;
-    text-decoration:none;
-    border-radius:5px;
+.card a{
+display:inline-block;
+margin-top:20px;
+padding:10px 18px;
+background:#007bff;
+color:white;
+text-decoration:none;
+border-radius:6px;
 }
 
-a:hover{
-    background:#004b9b;
+.card a:hover{
+background:#004a99;
 }
 
 footer{
-    text-align:center;
-    padding:20px;
-    background:#0056b3;
-    color:white;
-    margin-top:40px;
+margin-top:30px;
+background:#0056b3;
+color:white;
+text-align:center;
+padding:20px;
 }
+
 </style>
 
 </head>
@@ -71,9 +134,53 @@ footer{
 <body>
 
 <header>
+
+<div class="top">
+
+<img src="images/logo.png" class="logo">
+
+<div class="title">
 <h1>THƯ VIỆN HỌC LIỆU SỐ</h1>
-<p>Giảng viên Nguyễn Văn Dũng</p>
+<p>Trường Cao đẳng Việt Nam – Hàn Quốc – Quảng Ngãi</p>
+</div>
+
+</div>
+
 </header>
+
+
+<div class="teacher">
+
+<img src="images/gv.jpg">
+
+<div>
+
+<h2>ThS. Nguyễn Văn Dũng</h2>
+
+<p><b>Giảng viên:</b> Khoa Công nghệ thông tin</p>
+
+<p><b>Website học liệu số</b></p>
+
+<p>Phục vụ học tập - nghiên cứu - chuyển đổi số</p>
+
+</div>
+
+</div>
+
+
+
+<div class="notice">
+
+<h2>📢 THÔNG BÁO</h2>
+
+<p>✔ Chào mừng sinh viên đến với Thư viện học liệu số.</p>
+
+<p>✔ Chọn môn học bên dưới để mở tài liệu Google Drive.</p>
+
+<p>✔ Học liệu được cập nhật thường xuyên.</p>
+
+</div>
+
 
 <div class="container">
 
@@ -112,8 +219,13 @@ footer{
 </div>
 
 <footer>
-© 2026 - Thư viện học liệu số - Nguyễn Văn Dũng
+
+© 2026 - ThS. Nguyễn Văn Dũng - Khoa Công nghệ thông tin<br>
+
+Trường Cao đẳng Việt Nam – Hàn Quốc – Quảng Ngãi
+
 </footer>
 
 </body>
+
 </html>
